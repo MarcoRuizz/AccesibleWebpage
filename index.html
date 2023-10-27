@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- page tittle -->
+    <title>Ejemplo de página web accesible</title>
+
+    <!-- link styles -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- icon -->
+    <link rel="icon" href="spongebob.png" />
+  </head>
+
+  <body>
+    <!-- header -->
+    <header>
+      <h1>Blog de Viajes</h1>
+    </header>
+
+    <main>
+      <h2>Destinos populares</h2>
+
+      <!-- paris -->
+      <section>
+        <h3>París, Francia</h3>
+        <img
+          src="https://images.adsttc.com/media/images/5d44/14fa/284d/d1fd/3a00/003d/large_jpg/eiffel-tower-in-paris-151-medium.jpg?1564742900"
+          alt="Imagen de la Torre Eiffel en Paris"
+          class="imagen"
+        />
+        <blockquote lang="es">
+          <p class="justify">
+            París, la capital de Francia, es conocida como la Ciudad de la Luz y
+            es famosa por su belleza arquitectónica, su rica historia y su
+            cultura vibrante. Es el hogar de numerosos monumentos icónicos como
+            la Torre Eiffel, el Museo del Louvre, la Catedral de Notre Dame y el
+            Palacio de Versalles. Además de su rica herencia cultural, París
+            también es conocida por su exquisita cocina, sus encantadores cafés
+            y sus elegantes boutiques de moda. Los visitantes pueden disfrutar
+            de paseos románticos a lo largo del río Sena, explorar encantadores
+            barrios como Montmartre y Le Marais, y sumergirse en la rica escena
+            artística y cultural que la ciudad tiene para ofrecer.
+          </p>
+        </blockquote>
+      </section>
+
+      <!-- tokio -->
+      <section>
+        <h3>Tokio</h3>
+        <img
+          src="https://res.cloudinary.com/jnto/image/upload/w_918,h_516,c_fill,f_auto,fl_lossy,q_60/v1/media/filer_public/83/35/833512a6-47fe-405a-9e78-ab0a0a75bfdc/foto1_gg6vt8"
+          alt="Imagen del paisaje de Tokio"
+          class="imagen"
+        />
+        <blockquote lang="es">
+          <p class="justify">
+            Tokio, la capital de Japón, es una metrópolis dinámica y vibrante
+            conocida por su tecnología de vanguardia, su cultura pop única y su
+            deliciosa cocina. Es un centro global de negocios y finanzas, pero
+            también ofrece una fascinante mezcla de tradición y modernidad. Los
+            visitantes pueden explorar barrios famosos como Shibuya, famoso por
+            su cruce peatonal icónico, Akihabara, conocido por su cultura otaku
+            y tecnología, y Asakusa, que alberga el famoso templo Senso-ji.
+            Además, Tokio es famoso por su deliciosa comida callejera, sus
+            exquisitos platos de sushi y su emocionante vida nocturna, que
+            incluye bares temáticos únicos y clubes nocturnos animados.
+          </p>
+        </blockquote>
+      </section>
+
+      <!-- form -->
+      <h2>Formulario de Contacto</h2>
+      <form>
+        <label for="name">Nombre:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          aria-required="true"
+        /><br />
+
+        <label for="email">Correo electrónico:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          aria-required="true"
+        /><br />
+
+        <label for="message">Mensaje:</label><br />
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          required
+          aria-required="true"
+        ></textarea
+        ><br />
+
+        <div class="text-center">
+          <input type="submit" value="Enviar" role="button" />
+        </div>
+      </form>
+
+      <!-- table -->
+      <h2>Tabla de Datos</h2>
+      <table>
+        <tr>
+          <th scope="col">Nombre</th>
+          <th scope="col">Edad</th>
+          <th scope="col">País</th>
+        </tr>
+        <tr>
+          <td scope="row">Juan</td>
+          <td>25</td>
+          <td>España</td>
+        </tr>
+        <tr>
+          <td scope="row">Lisa</td>
+          <td>30</td>
+          <td>Estados Unidos</td>
+        </tr>
+        <tr>
+          <td>Mario</td>
+          <td>28</td>
+          <td>Italia</td>
+        </tr>
+      </table>
+
+      <br />
+      <br />
+      <br />
+    </main>
+
+    <footer>
+      <p>Derechos de autor 2023 | Blog de Viajes</p>
+    </footer>
+  </body>
+</html>
